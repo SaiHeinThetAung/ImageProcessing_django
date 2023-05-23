@@ -15,12 +15,17 @@
 
 <br>
 <br>
-<div class="alert alert-success">
-    {% if text %}
-        <p>{{ text}}</p>
-    {% else %}
-        <p>No text found.</p>
-    {% endif %}
+<div class="alert alert-success " style="display: flex;justify-content: center;">
+    <table>
+        {% for d,v in data.items %}
+        <tr style="text-align: center">
+
+        <td>{{ d }}  </td>
+        <td>{{ v }}  </td>
+        </tr>
+    {% endfor %}
+    </table>
+
 </div>
 
 
